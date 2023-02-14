@@ -1,19 +1,18 @@
 
-#######   ********************** ATM machine
-#pin : balance
+#######   *********** ATM machine  *********** #######   
+
 from datetime import datetime
 now=datetime.now()
 
 Dict_atm={1234:8800,4567:9500,7892:7300,7418:5000,1478:3000,6985:1200,9874:7500,9632:7000,6565:4500,2021:6000} # Large data can be in Dictionary , Perfectly Run 
 
-#print(Dict_atm['4567'])
 print(75*"=")
 print("\nWELCOME TO CODERS BANK OF INDIA")
 print(75*"=")
 print("\n")
 print(" Withdraw Cash       :   A")
 print(" Balance Enquiry     :   B")
-print(" Pin Change          :   C")
+print(" Pin Change              :   C")
 print(" Other Banking       :   D\n")
 user_op=input("Choose Option A|B|C|D : ")
 
@@ -45,13 +44,13 @@ elif user_op.casefold()=='c':
     Dict_atm[user_newpin]=old_bal
     #Dict_atm.update(user_newpin=old_bal)
     
-    #Dict_atm['user_pin']=user_newpin   // value change in this
+    # Dict_atm['user_pin']=user_newpin   // value change in this
     print("\nYour Pin has been Updated Succesfully.\n")
-    #print("Updated pin is - ",Dict_atm[user_newpin])
+    # print("Updated pin is - ",Dict_atm[user_newpin])
     # print(Dict_atm,"\n")
 
     #----------------------   OPTION D STARTS -------------------------------#
-	 #----------------------   INDIDE 'D' TWO SUB OPTION-------------------------------#
+	 #----------------------   INSIDE 'D' TWO SUB OPTION-------------------------------#
 elif user_op.casefold()=='d':
     print("\tOTHER BANKING\n")
     print("\n **** PLEASE SELECT AN OPTION ****")
@@ -78,12 +77,11 @@ elif user_op.casefold()=='d':
         user_ip=input("\nTo get Account Details Please Enter your password - \n")
         if user_ip=='1234':
             print("PLease wait , while your request is being processed ....\n")
-            listrehan=['Rehan Mondal','A/C No.:542019241256','Bank- SBI','Branch-Mahamayatala','Branch code:101634']
+            listrehan=['Rehan Mondal','A/C No.:542124541256','Bank- SBI','Branch-Mahamayatala','Branch code:101634']
                                 # print(listrehan,end=" - ")
             for i in listrehan:
                 print(i)
             print("\n")
-
 
         elif user_ip=='4567':
             print("PLease wait , while your request is being processed ....\n")
@@ -94,8 +92,8 @@ elif user_op.casefold()=='d':
 
         elif user_ip=='7892':
             print("PLease wait , while your request is being processed ....\n")
-            listchiki=['Ishrat Tasneem','A/C No.:1005319241256','HDFC','Branch-Brahmapur','Branch code:HDFC634']
-            for i in listchiki:
+            listIishrat=['Ishrat Tasneem','A/C No.:1005319241256','HDFC','Branch-Brahmapur','Branch code:HDFC634']
+            for i in listIishrat:
                 print(i)
             print("\n")
 else:
