@@ -50,7 +50,8 @@ elif user_op.casefold()=='c':
     #print("Updated pin is - ",Dict_atm[user_newpin])
     # print(Dict_atm,"\n")
 
-    #----------------------   OPTION D er vitor 2 sub OPTION -------------------------------#
+    #----------------------   OPTION D STARTS -------------------------------#
+	 #----------------------   INDIDE 'D' TWO SUB OPTION-------------------------------#
 elif user_op.casefold()=='d':
     print("\tOTHER BANKING\n")
     print("\n **** PLEASE SELECT AN OPTION ****")
